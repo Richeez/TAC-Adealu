@@ -6,7 +6,7 @@ export const StyledCarousel = styled.div`
   display: flex;
 overflow-x: scroll;
 margin: 0 auto; 
-min-width: 500px;
+/* min-width: 500px; */
 height: 500px;
 white-space: nowrap;
 position: relative;
@@ -100,7 +100,9 @@ position: relative;
 
 .active, .dot:hover {
   background-color: var(--dark-orange);
+  border: 2px solid var(--white-color-01) ;
 }
  }
+
 
 `;
