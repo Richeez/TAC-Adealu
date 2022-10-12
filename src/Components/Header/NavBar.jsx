@@ -12,8 +12,9 @@ function NavBar({scrollToPage, menu, toggleTheme, themeState, home, about, event
       </Brand>
         <NavCont className={`${menu ? 'active-notation' : ''}`} >
         <Nav>
+          {/* hello world */}
             <UL>
-                <li  onClick={()=>scrollToPage(home)} > <span>Home</span> </li>
+                {/* <li  onClick={()=>scrollToPage(home)} > <span>Home</span> </li> */}
                 <li  onClick={()=>scrollToPage(about)} ><span>About</span> </li>
                 <li> <span> Media <FontAwesomeIcon icon={['fa','caret-down']}/></span></li>
                 <li  onClick={()=>scrollToPage(events)} ><span>Events</span> </li>
