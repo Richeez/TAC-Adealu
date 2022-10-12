@@ -1,15 +1,14 @@
 import React from 'react'
 
-const CarouselIndicator = ({slides}) => {
+const CarouselIndicator = ({slides, currentSlide, switchSlide}) => {
   return (
-
-    // slides.map((slide, index)=>(
-
-    // ))
     <div className='dots-cont'>
-    <span className="dot" onClick={1}></span>
-    <span className="dot" onClick={1}></span>
-    <span className="dot" onClick={1}></span>
+       {slides.map((slide, index)=>(
+    <span 
+    className={`dot ${index === currentSlide ? 'active' : ''}`}
+    onClick={()=>switchSlide(index)}
+    ></span>
+     ))}
   </div>
     )
 }

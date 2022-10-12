@@ -41,6 +41,12 @@ const ImageSlides = ({slides}) => {
     setCurrentSlide(index)
   }
 
+  const switchSlide = (index) => {
+    startSlideTimer()
+    setCurrentSlide(index)
+
+  }
+
   useEffect(() => {
     startSlideTimer()
 
@@ -60,7 +66,7 @@ const ImageSlides = ({slides}) => {
 
     ))}
     <CarouselControls prev={prev} next={next}/>
-    <CarouselIndicator/>
+    <CarouselIndicator slides={slides} currentSlide={currentSlide} switchSlide={switchSlide}/>
     </div>
     </>
       )

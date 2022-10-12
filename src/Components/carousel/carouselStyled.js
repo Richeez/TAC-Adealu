@@ -100,7 +100,9 @@ position: relative;
 
 .active, .dot:hover {
   background-color: var(--dark-orange);
+  border: 2px solid var(--white-color-01) ;
 }
  }
+
 
 `;
