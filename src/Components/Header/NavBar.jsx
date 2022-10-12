@@ -4,13 +4,13 @@ import { Label, Slider, Switch, SwitcherCont } from '../switch/switchStyled'
 import { Header, Nav, UL, NavCont, Brand, Logo} from './navBarStyled'
 
 
-function NavBar({scrollToPage, toggleMenu, menu, toggleTheme, themeState, home, about, events, contact}) {
+function NavBar({scrollToPage, menu, toggleTheme, themeState, home, about, events, contact}) {
   return (
     <Header>
       <Brand>
       <Logo src='./images/logo-2.png' alt='brand logo'/>
       </Brand>
-        <NavCont className={`${menu ? 'active' : ''}`} >
+        <NavCont className={`${menu ? 'active-notation' : ''}`} >
         <Nav>
             <UL>
                 <li  onClick={()=>scrollToPage(home)} > <span>Home</span> </li>

@@ -55,7 +55,7 @@ background: var(--linear-g01);
       width: 100%;
       height: 3rem;
       pointer-events: none;
-      transform: translateX(100%);
+      transform: translateX(-100%);
       opacity: 0;
       transition: var(--transition);
 
@@ -64,7 +64,7 @@ background: var(--linear-g01);
 }
 
 
-.active {
+.active-notation {
     display: block;
 
   animation:scaleAnim 1s forwards ease-out;

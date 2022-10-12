@@ -98,9 +98,9 @@ position: relative;
   border: 2px solid var(--dark-blue-bg) ;
 }
 
-.active, .dot:hover {
+.active-notation, .dot:hover {
   background-color: var(--dark-orange);
-  border: 2px solid var(--white-color-01) ;
+  border: 2px solid var(--white-color-01);
 }
  }
 

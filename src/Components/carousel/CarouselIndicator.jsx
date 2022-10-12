@@ -5,7 +5,7 @@ const CarouselIndicator = ({slides, currentSlide, switchSlide}) => {
     <div className='dots-cont'>
        {slides.map((slide, index)=>(
     <span 
-    className={`dot ${index === currentSlide ? 'active' : ''}`}
+    className={`dot ${index === currentSlide ? 'active-notation' : ''}`}
     onClick={()=>switchSlide(index)}
     ></span>
      ))}

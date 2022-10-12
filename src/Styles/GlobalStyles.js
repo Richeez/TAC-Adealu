@@ -187,10 +187,10 @@ section{
 }
 
 
-.active {
+.active-notation {
     display: block;
 
-  animation:scaleAnim 1s forwards ease-out;
+  animation: scaleAnim 1s forwards ease-out;
 
   @keyframes scaleAnim {
 
