@@ -1,9 +1,9 @@
+import { StyledCarousel } from './carouselStyled';
 import ImageSlides from './ImageSlides';
 
 
 const Carousel = () => {
-
-  const slides =[
+   const slides =[
     {img:'images/image__1.png'},
     {img:'images/image__2.png'},
     {img:'images/image__3.png'},
@@ -15,11 +15,11 @@ const Carousel = () => {
 
   
   return (
-    <div className="img-cont" >
+    <StyledCarousel >
     
     <ImageSlides slides={slides} />
 
-    </div>
+    </StyledCarousel>
     )
 }
 
