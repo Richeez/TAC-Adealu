@@ -6,7 +6,7 @@ export const StyledCarousel = styled.div`
   display: flex;
 overflow-x: scroll;
 margin: 0 auto; 
-min-width: 500px;
+/* min-width: 500px; */
 height: 500px;
 white-space: nowrap;
 position: relative;
