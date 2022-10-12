@@ -58,7 +58,8 @@ background:var(--linear-g06);
     margin-top: -8rem;
     width: 100%;
     font-size: 3rem;
-    letter-spacing: 2px;
+    padding: 0 1rem;
+    letter-spacing: 3.5px;
     text-align: center;
     font-family: 'Mea Culpa', cursive;
 
