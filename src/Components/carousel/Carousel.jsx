@@ -17,7 +17,7 @@ const Carousel = () => {
   return (
     <StyledCarousel>
     
-    <ImageSlides slides={slides} controls indicators width={1200}  />
+    <ImageSlides slides={slides} controls indicators width={1000}  />
 
     </StyledCarousel>
     )
