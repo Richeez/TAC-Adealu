@@ -5,12 +5,10 @@ import { HomePage } from './HomeStyled'
 
 
 
+
 function Home({home}) {
 
-  function currentSlide() {
 
-    
-  }
 
   return (
     <HomePage>
@@ -18,14 +16,7 @@ function Home({home}) {
 
       <div className="overlay"> 
       <h1>Welcome To Church</h1></div>
-<span className="prev" >&#10094;</span>
-<span className="next" >&#10095;</span>
-<Carousel/>
-      <div className='dots-cont'>
-  <span className="dot" onClick={currentSlide(1)}></span>
-  <span className="dot" onClick={currentSlide(2)}></span>
-  <span className="dot" onClick={currentSlide(3)}></span>
-</div>
+   <Carousel/>
       <FlexContainer className='absolute'>
 
 <ButtonLink>

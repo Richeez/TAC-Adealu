@@ -1,6 +1,5 @@
 import React from 'react'
 import { About, Contact, Events, Home, Subtext } from '../pages'
-
 import {ReactComponent as MenuBar} from '../svgs/menu.svg'
 import {ReactComponent as Close} from '../svgs/close.svg'
 import { MainContainer } from './mainContentStyled'
