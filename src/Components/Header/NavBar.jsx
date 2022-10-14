@@ -10,7 +10,7 @@ function NavBar({scrollToPage, menu, toggleTheme, themeState, home, about, event
       <Brand>
       <Logo src='./images/logo-2.png' alt='brand logo'/>
       </Brand>
-        <NavCont className={`${menu ? 'active-notation' : ''}`} >
+        <NavCont className={`${menu ? 'active' : ''}`} >
         <Nav>
           {/* hello world */}
             <UL>

@@ -59,7 +59,7 @@ padding-right: 2rem;
   position: absolute;
   align-items: flex-start;
   flex-direction: column;
-  height: 60vh;
+  min-height: 60vh;
   right: 0;
   transform: translateX(100%);
       opacity: 0;
@@ -76,7 +76,7 @@ padding-right: 2rem;
 border-radius: 1rem;
 padding-top: 2rem;
 border-top-right-radius: 0;
-  height: 60vh;
+  min-height: 60vh;
   position: absolute;
   transform: translateX(100%);
       opacity: 0;
@@ -94,7 +94,12 @@ border-top-right-radius: 0;
 export const Nav = styled.nav`
 display: flex;
 width: 100%;
-height: fit-content;
+height: max-content;
+
+@media screen and (max-width:40rem){
+  padding-bottom: 2rem;
+}
+
 
 
 `;
@@ -105,7 +110,7 @@ justify-content: space-between;
 gap: 1.3rem;
 width: 70%;
 margin-left: auto;
-height: fit-content;
+height: max-content;
 list-style: none;
 
 @media screen and (max-width:57rem){

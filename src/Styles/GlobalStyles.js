@@ -187,7 +187,7 @@ section{
 }
 
 
-.active-notation {
+.active{
     display: block;
 
   animation: scaleAnim 1s forwards ease-out;

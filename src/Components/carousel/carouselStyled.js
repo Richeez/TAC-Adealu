@@ -6,17 +6,19 @@ export const StyledCarousel = styled.div`
   display: flex;
 overflow-x: scroll;
 margin: 0 auto; 
-/* min-width: 500px; */
+min-width: 500px;
 height: 500px;
 white-space: nowrap;
 position: relative;
   scroll-snap-type: x mandatory;
 
+
   .inner-container{
     padding-top: 3rem;
-    min-width: 500px;
+    /* min-width: 500px; */
     position: relative;
     display: flex;
+    overflow: hidden;
 
 
     & > *{
@@ -27,6 +29,13 @@ position: relative;
 
     
     }
+
+    @media screen and (max-width: 40rem) {
+    
+      min-width: 100%;
+
+  }
+
 
   }
 
@@ -40,7 +49,8 @@ position: relative;
 
 .controls{
     width: 100%;
-    background: orangered;
+    display: flex;
+    background-color: orangered;
 
 .prev, .next {
   cursor: pointer;
@@ -66,6 +76,19 @@ position: relative;
 .prev {
   left: 3%;
   border-radius: 2rem 0 0 2rem;
+}
+
+@media screen and (max-width: 40rem) {
+
+  .next {
+  right: 13%;
+  border-radius: 0 2rem 2rem 0;
+}
+.prev {
+  left: 13%;
+  border-radius: 2rem 0 0 2rem;
+}
+
 }
 
 .prev:hover, .next:hover {
@@ -98,7 +121,7 @@ position: relative;
   border: 2px solid var(--dark-blue-bg) ;
 }
 
-.active-notation, .dot:hover {
+.active, .dot:hover {
   background-color: var(--dark-orange);
   border: 2px solid var(--white-color-01);
 }

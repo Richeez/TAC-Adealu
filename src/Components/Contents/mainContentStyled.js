@@ -16,9 +16,9 @@ background: var(--linear-g01);
     display: none;
     width: 3.1rem;
     position: sticky;
-    top: 75%;
+    top: 85%;
     left: 100%;
-    z-index: 5;
+    z-index: 10;
     overflow: hidden;
     transform: translateX(-50%);
     background-color: var(--dark-blue-bg);
@@ -40,12 +40,16 @@ background: var(--linear-g01);
       display: flex;
       width: 4rem;
       height: 4rem;
+      z-index: 10;
+
 
     }
     @media screen and (max-width:40rem){
       display: flex;
       width: 3.5rem;
       height: 3.5rem;
+      z-index: 10;
+
 
 
     }
@@ -55,7 +59,7 @@ background: var(--linear-g01);
       width: 100%;
       height: 3rem;
       pointer-events: none;
-      transform: translateX(-100%);
+      transform: translateX(100%);
       opacity: 0;
       transition: var(--transition);
 

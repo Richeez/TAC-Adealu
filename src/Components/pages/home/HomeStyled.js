@@ -9,6 +9,7 @@ align-items: center;
 flex-direction: column;
 justify-content: center;
 position: relative;
+// overflow: hidden;
 /* background-color: var(--transparent-color-01);
   background: var(--transparent-color-01); */
 

@@ -8,7 +8,7 @@ const MainContent = ({toggleMenu, menu, home, about, events, contact}) => {
   return (
 <MainContainer>
   <div onClick={toggleMenu} className="MenuBar">
-    {menu ? <Close className='menu active-notation'/> : <MenuBar className='menu active-notation'/>}
+    {menu ? <Close className='menu active'/> : <MenuBar className='menu active'/>}
   </div>
      <Home home={home}/>
      <Subtext/>
