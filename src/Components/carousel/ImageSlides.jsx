@@ -4,14 +4,14 @@ import CarouselControls from './CarouselControls';
 import CarouselIndicator from './CarouselIndicator';
 
 
-const ImageSlides = ({slides, indicators = false, controls = false, interval = 5000, autoplay = true, width = 1000  }) => {
+const ImageSlides = ({slides, indicators = false, controls = false, interval = 5000, autoSlide = true, width = 1000  }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slideInterval = useRef(null)
 
   const startSlideTimer = ()=>{
 
-    if (autoplay) {
+    if (autoSlide) {
 
     stopSlideTimer()
 
@@ -23,7 +23,7 @@ const ImageSlides = ({slides, indicators = false, controls = false, interval = 5
   }
 
   const stopSlideTimer = () =>{
-    if (autoplay && slideInterval.current) {
+    if (autoSlide && slideInterval.current) {
       
       clearInterval(slideInterval.current)
     }
@@ -67,11 +67,11 @@ const ImageSlides = ({slides, indicators = false, controls = false, interval = 5
    <div className="img" style={{transform:`translateX(${currentSlide * -100}%)`}}>
     <BGImage src={slide.img}  key={index} alt='image'/>
               
-            </div>
-
+    
+    </div>
     ))}
-    { controls && <CarouselControls prev={prev} next={next}/>}
-{ indicators && <CarouselIndicator  slides={slides} currentSlide={currentSlide} switchSlide={switchSlide}/>}    
+    {controls && <CarouselControls prev={prev} next={next}/>}
+{indicators && <CarouselIndicator  slides={slides} currentSlide={currentSlide} switchSlide={switchSlide}/>}    
 </div>
     </>
       )

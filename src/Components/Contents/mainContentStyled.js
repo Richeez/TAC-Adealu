@@ -44,6 +44,7 @@ background: var(--linear-g01);
 
 
     }
+
     @media screen and (max-width:40rem){
       display: flex;
       width: 3.5rem;

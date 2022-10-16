@@ -1,6 +1,6 @@
 import Globalstyles from './Styles/GlobalStyles';
 import { Footer, MainContent, NavBar } from './Components';
-import {useState, useRef} from 'react'
+import {useState, useRef, useEffect} from 'react'
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './Theme/theme';
 
@@ -17,13 +17,24 @@ function App() {
   
 
   const [currentTheme, setCurrentTheme] = useState( JSON.parse(localStorage.getItem('currentMode')) ?? 'light');
+  let isOpened = false;
 
   const menuBar = () => {
-
+    if (!isOpened) {
     setMenuOpen(prev => !prev)
     
+    }
+    
   }
+  
+  useEffect(() => {
 
+  menuBar()
+
+  return ()=> isOpened = false
+
+  }, [isOpened]);
+  
   const scrollToPage = (page) => {
 window.scrollTo({
   top: page.current.offsetTop,

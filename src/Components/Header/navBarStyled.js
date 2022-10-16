@@ -22,6 +22,8 @@ background:var(--linear-g02);
 
 
 
+
+
 `;
 export const Logo = styled.img`
 width: 100%;
@@ -53,7 +55,7 @@ gap: 5rem;
 padding-right: 2rem;
 
 @media screen and (max-width:57rem){
-  display: none;
+  /* display: none; */
   width: 50%;
   top: 68%;
   position: absolute;
@@ -91,7 +93,7 @@ border-top-right-radius: 0;
 
 `;
 
-export const Nav = styled.nav`
+export const StyledNav = styled.nav`
 display: flex;
 width: 100%;
 height: max-content;
@@ -193,11 +195,6 @@ color: inherit;
   }  
 
 }
-
-@media screen and (max-width:40rem){
-  
-}
-
 
 
 `;

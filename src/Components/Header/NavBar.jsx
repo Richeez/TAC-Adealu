@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Label, Slider, Switch, SwitcherCont } from '../switch/switchStyled'
-import { Header, Nav, UL, NavCont, Brand, Logo} from './navBarStyled'
+import { Header, StyledNav, UL, NavCont, Brand, Logo} from './navBarStyled'
 
 
 function NavBar({scrollToPage, menu, toggleTheme, themeState, home, about, events, contact}) {
@@ -11,8 +11,8 @@ function NavBar({scrollToPage, menu, toggleTheme, themeState, home, about, event
       <Logo src='./images/logo-2.png' alt='brand logo'/>
       </Brand>
         <NavCont className={`${menu ? 'active' : ''}`} >
-        <Nav>
-          {/* hello world */}
+{console.log('as menu', menu)}       
+          <StyledNav>
             <UL>
                 <li  onClick={()=>scrollToPage(home)} > <span>Home</span> </li>
                 <li  onClick={()=>scrollToPage(about)} ><span>About</span> </li>
@@ -21,7 +21,7 @@ function NavBar({scrollToPage, menu, toggleTheme, themeState, home, about, event
                 {/* <li><a href='#donate'>Give</a></li> */}
                 <li  onClick={()=>scrollToPage(contact)} ><span>Contact Us</span> </li>
             </UL>
-        </Nav>
+        </StyledNav>
         </NavCont>
         <SwitcherCont>
         <p className={`${themeState === 'light' ? 'show': 'dim'}`}>Light</p>
