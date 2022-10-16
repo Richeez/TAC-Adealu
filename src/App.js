@@ -1,6 +1,6 @@
 import Globalstyles from './Styles/GlobalStyles';
 import { Footer, MainContent, NavBar } from './Components';
-import {useState, useRef, useEffect} from 'react'
+import { useState, useRef } from 'react'
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './Theme/theme';
 
@@ -8,79 +8,69 @@ import { darkTheme, lightTheme } from './Theme/theme';
 
 function App() {
 
-  const [menuOpen, setMenuOpen] = useState(false);
-
+  const menu = useRef(null);
   const home = useRef(null);
   const about = useRef(null);
   const events = useRef(null);
   const contact = useRef(null);
-  
 
-  const [currentTheme, setCurrentTheme] = useState( JSON.parse(localStorage.getItem('currentMode')) ?? 'light');
-  let isOpened = false;
+
+  const [currentTheme, setCurrentTheme] = useState(JSON.parse(localStorage.getItem('currentMode')) ?? 'light');
 
   const menuBar = () => {
-    if (!isOpened) {
-    setMenuOpen(prev => !prev)
-    
-    }
-    
+
+    menu?.current?.classList.toggle('active')
+
   }
-  
-  useEffect(() => {
 
-  menuBar()
 
-  return ()=> isOpened = false
-
-  }, [isOpened]);
-  
   const scrollToPage = (page) => {
-window.scrollTo({
-  top: page.current.offsetTop,
-});    
+    window.scrollTo({
+      top: page.current.offsetTop,
+    });
   };
 
-  
+
 
   function switchMode() {
     currentTheme === 'light' ? setCurrentTheme('dark') : setCurrentTheme('light')
-    
+
   }
-  
+
   return (
-   <ThemeProvider theme={currentTheme === 'light' ? lightTheme : darkTheme}>
-    {localStorage.setItem('currentMode', JSON.stringify(currentTheme))}
+    <ThemeProvider theme={currentTheme === 'light' ? lightTheme : darkTheme}>
+      {localStorage.setItem('currentMode', JSON.stringify(currentTheme))}
 
-<>
-<Globalstyles/>
-<div className='header'>
-<div className='inner-header'>
+      <>
+        <Globalstyles />
+        <div className='header'>
+          <div className='inner-header'>
 
-<NavBar
- scrollToPage={scrollToPage} 
- toggleMenu={menuBar} 
- toggleTheme={switchMode}
-themeState={currentTheme}
- menu={menuOpen} home={home} 
- about={about} 
- events={events} 
- contact={contact}/>
+            <NavBar
+              scrollToPage={scrollToPage}
+              toggleMenu={menuBar}
+              toggleTheme={switchMode}
+              themeState={currentTheme}
+              menu={menu}
+              home={home}
+              about={about}
+              events={events}
+              contact={contact} />
 
 
-<MainContent 
-toggleMenu={menuBar} 
-menu={menuOpen}
-home={home} 
-about={about} 
-events={events} 
-contact={contact}/>
-</div>
-</div>
+            <MainContent
+              toggleMenu={menuBar}
+              menu={menu}
+              home={home}
+              about={about}
+              events={events}
+              contact={contact} />
+          </div>
+        </div>
 
-<Footer/> 
-</>
-   </ThemeProvider>
+        <Footer />
+      </>
+    </ThemeProvider>
   );
 }
 
