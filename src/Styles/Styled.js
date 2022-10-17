@@ -42,7 +42,7 @@ gap: 1rem;
 
 @media screen and (max-width:40rem){
     flex-direction: column;
-    gap: 1.8rem !important;
+    gap: 2rem !important;
     margin-bottom:-7rem;
   
 }

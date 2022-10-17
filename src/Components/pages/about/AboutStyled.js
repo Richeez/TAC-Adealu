@@ -7,45 +7,14 @@ position: relative;
 align-items: center;
 justify-content: center;
 
-/* h2{
-    color: var(--dark-orange);
-
-} */
-
-
-/* .clip{
-position: absolute;
-top: 0;
-width: 85%;
-height: 8rem;
-border-radius: 2rem;
-display: flex;
-padding-top: 2rem;
-align-items: flex-start;
-justify-content: center;
-background-color: var(--navy-blue-bg);
-background: linear-gradient( to top, var(--dark-orange), var(--dark-blue-bg), var(--light-blue-bg), var(--dark-blue-bg));
-/* background:var(--linear-g02); 
-
-clip-path: polygon(0 0, 100% 0, 100% 61%, 0 84%);
-
-@media screen and (max-width:40rem){
-    width: 95%;
-
-
-    
-}
-
-
-
-
-}*/
 
 .aboutTextContainer{
     padding-top: 3rem;
 
+
     @media screen and (max-width:40rem){
         padding-top: 5rem;
+
         
     
         
@@ -57,6 +26,7 @@ clip-path: polygon(0 0, 100% 0, 100% 61%, 0 84%);
     display: grid;
 grid-template-columns: repeat( 3, 1fr);
 gap: 2rem;
+
 
 @media screen and (max-width:57rem){
     grid-template-columns: repeat( 2, 1fr);
@@ -88,6 +58,7 @@ grid-template-columns: repeat( 2, 1fr);
 padding-top: 3rem;
 grid-column-gap: 2rem;
 grid-row-gap: 4rem;
+overflow: hidden;
 
 @media screen and (max-width:40rem){
     grid-template-columns:  1fr;
@@ -101,6 +72,8 @@ grid-row-gap: 4rem;
     position: relative;
     padding: 3.5rem .5rem 1.5rem;
     border-radius: 1rem;
+
+
 
     &:hover{
         transform: translateY(-7px);

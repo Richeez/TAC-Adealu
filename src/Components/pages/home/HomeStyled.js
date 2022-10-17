@@ -9,13 +9,19 @@ align-items: center;
 flex-direction: column;
 justify-content: center;
 position: relative;
-// overflow: hidden;
-/* background-color: var(--transparent-color-01);
-  background: var(--transparent-color-01); */
 
-    // background-color: var(--dark-blue-bg);
-    // background: var(--linear-g01);
 
+@media screen and (max-width: 57rem){
+  
+  margin-top: 1rem;
+  
+}
+
+@media screen and (max-width: 40rem){
+
+  margin-top: 8rem;
+
+}
 
 .circle1{
    width :100% ;

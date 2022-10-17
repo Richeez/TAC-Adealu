@@ -37,10 +37,13 @@ position: relative;
   flex-direction: column;
   min-height: 60vh;
   right: 0;
+  border-radius: 1rem 0 1rem 1rem;
+
+
   // transform: translateX(100%);
       opacity: 0;
       transition: var(--transition);
-    background: var(--linear-g01);
+    background: var(--linear-g09);
 
 
 

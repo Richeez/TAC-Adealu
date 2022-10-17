@@ -15,7 +15,7 @@ const About = ({about}) => {
 <div className="aboutTextContainer">
   <div className="span-2">
           <p >
-            We are the lead magnet of TACN Adealu, we build young minds to
+            We are products of TACN Adealu, we build young minds to
             become great adults, great weapons in God's hands and a blessing to
             their world.
           </p>
@@ -37,7 +37,7 @@ const About = ({about}) => {
     </div>
 
           <div className="aboutImageAndText span-2">
-           <div className="text">
+           <div  className="text ">
             <div className="imageContainer">
               <img src="" alt="insert your profile pic"/>
             </div>
@@ -47,7 +47,7 @@ const About = ({about}) => {
             their world.
               </p>
             </div>
-           <div className="text">
+           <div className="text ">
             <div className="imageContainer">
               <img src="" alt="insert your profile pic"/>
             </div>

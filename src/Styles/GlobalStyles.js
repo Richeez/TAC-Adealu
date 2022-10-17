@@ -107,7 +107,7 @@ p{
   clip-path: polygon(0 0, 100% 0, 100% 61%, 0 84%);
   
   @media screen and (max-width:40rem){
-      width: 95%;
+      width: 100%;
   
   
       
@@ -126,17 +126,17 @@ section{
     min-height: 50vh;
     padding: 3rem;
 
+    
+    @media screen and (max-width: 57rem){
+      padding: 1rem ;
+      
+      
+      
+    }
+    
     @media screen and (max-width: 40rem){
       padding: 1rem ;
-}
-
-@media screen and (max-width: 57rem){
-  padding: 1rem ;
-        
-    
-        
-    }
-
+  }
 
 }
 
@@ -186,9 +186,24 @@ section{
     
 }
 
+.translateX_400{
+  opacity: 0;
+  transform: translateX(400%);
+  transition: var(--transition);
+}
+
+.translateX_400:nth-of-type(even){
+  opacity: 0;
+  transform: translateX(-400%);
+}
+
+.translateX_0{
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 .active{
-    /* display: block; */
 
   animation: scaleAnim 1s forwards ease-out;
 

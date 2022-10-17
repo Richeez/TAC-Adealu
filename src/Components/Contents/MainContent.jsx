@@ -12,8 +12,10 @@ const MainContent = ({toggleMenu, menu, home, about, events, contact}) => {
   </div>
      <Home home={home}/>
      <Subtext/>
-     <About about={about}/>
-     <Events events={events}/>
+     <About 
+     about={about}      
+     />
+     <Events events={events} />
      <Contact contact={contact}/>
  </MainContainer>
   )

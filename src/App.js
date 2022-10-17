@@ -1,6 +1,6 @@
 import Globalstyles from './Styles/GlobalStyles';
 import { Footer, MainContent, NavBar } from './Components';
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './Theme/theme';
 
@@ -28,6 +28,8 @@ function App() {
       top: page.current.offsetTop,
     });
   };
+
+
 
 
 
@@ -63,7 +65,9 @@ function App() {
               home={home}
               about={about}
               events={events}
-              contact={contact} />
+              contact={contact} 
+              
+              />
           </div>
         </div>
 

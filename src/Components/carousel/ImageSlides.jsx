@@ -65,7 +65,7 @@ const ImageSlides = ({slides, indicators = false, controls = false, interval = 5
 <div style={{maxWidth: width}} onMouseEnter={stopSlideTimer} onMouseOut={startSlideTimer}  className="inner-container">
     {slides.map((slide, index) => (
    <div className="img" style={{transform:`translateX(${currentSlide * -100}%)`}}>
-    <BGImage src={slide.img}  key={index} alt='image'/>
+    <BGImage src={slide.img} key={index}  alt='image'/>
               
     
     </div>

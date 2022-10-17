@@ -13,7 +13,7 @@ justify-content: center;
  .clip{
 
  @media screen and (max-width:40rem){
-  width: 100%;
+  width: 100% ;
 
 
     

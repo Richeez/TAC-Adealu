@@ -38,14 +38,9 @@ min-height:50vh;
 padding: 3rem;
 
 
-/* h2{
-    color: var(--white-color-01);
-    font-size: 1.5rem;
-} */
-
-
 
 @media screen and (max-width:40rem){
+    width: 100%;
     padding: 1rem;
     
 }

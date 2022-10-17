@@ -13,8 +13,9 @@ export const FooterPage = styled.footer`
 
     .icons {
       display: flex;
-      padding: 0 100px;
+      padding: 0 10px;
       margin: 25px 0;
+      width: 100%;
       gap: 1rem;
       align-items: center;
       justify-content: center;
