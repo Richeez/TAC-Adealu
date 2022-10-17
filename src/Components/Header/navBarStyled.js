@@ -19,33 +19,7 @@ background:var(--linear-g02);
 }
 
 
-
-
-
-
-
-`;
-export const Logo = styled.img`
-width: 100%;
-height: 100%;
-object-fit: contain;
-
-`;
-
-export const Brand = styled.div`
-width: 100px;
-height: 90px;
-position: relative;
-margin-right: auto;
-
-
-@media screen and (max-width:40rem){
-margin-right: auto;
-}
-
-
-`;
-export const NavCont = styled.div`
+.nav-container{
 display: flex;
 width: 100%;
 max-width: 100%;
@@ -53,9 +27,9 @@ align-items: center;
 justify-content: center;
 gap: 5rem;
 padding-right: 2rem;
+position: relative;
 
 @media screen and (max-width:57rem){
-  /* display: none; */
   width: 50%;
   top: 68%;
   position: absolute;
@@ -63,7 +37,7 @@ padding-right: 2rem;
   flex-direction: column;
   min-height: 60vh;
   right: 0;
-  transform: translateX(100%);
+  // transform: translateX(100%);
       opacity: 0;
       transition: var(--transition);
     background: var(--linear-g01);
@@ -72,7 +46,7 @@ padding-right: 2rem;
 
 }
 @media screen and (max-width:40rem){
-  display: none;
+  // display: none;
   flex-direction: column;
   align-items: center;
 border-radius: 1rem;
@@ -80,8 +54,8 @@ padding-top: 2rem;
 border-top-right-radius: 0;
   min-height: 60vh;
   position: absolute;
-  transform: translateX(100%);
-      opacity: 0;
+  // transform: translateX(100%);
+      // opacity: 0;
       transition: var(--transition);
 
   right: 0;
@@ -90,10 +64,7 @@ border-top-right-radius: 0;
 
 }
 
-
-`;
-
-export const StyledNav = styled.nav`
+nav{
 display: flex;
 width: 100%;
 height: max-content;
@@ -103,9 +74,7 @@ height: max-content;
 }
 
 
-
-`;
-export const UL = styled.ul`
+ul{
 display: flex;
 align-items: flex-end;
 justify-content: space-between;
@@ -197,4 +166,37 @@ color: inherit;
 }
 
 
+}
+
+}
+
+
+}
+
+
+
+
 `;
+export const Logo = styled.img`
+width: 100%;
+height: 100%;
+object-fit: contain;
+
+`;
+
+export const Brand = styled.div`
+width: 100px;
+height: 90px;
+position: relative;
+margin-right: auto;
+
+
+@media screen and (max-width:40rem){
+margin-right: auto;
+}
+
+
+`;
+
+
+

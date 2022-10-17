@@ -188,7 +188,7 @@ section{
 
 
 .active{
-    display: block;
+    /* display: block; */
 
   animation: scaleAnim 1s forwards ease-out;
 
@@ -202,6 +202,7 @@ section{
     100%{
         transform: translateX(0);
         opacity: 1;
+
     }
     
   }

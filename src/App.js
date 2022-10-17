@@ -8,7 +8,7 @@ import { darkTheme, lightTheme } from './Theme/theme';
 
 function App() {
 
-  const menu = useRef(null);
+  const [menuOpen, setMenuOpen] = useState(false);
   const home = useRef(null);
   const about = useRef(null);
   const events = useRef(null);
@@ -19,8 +19,7 @@ function App() {
 
   const menuBar = () => {
 
-    menu?.current?.classList.toggle('active')
-
+    setMenuOpen( prevMenu => !prevMenu)
   }
 
 
@@ -51,7 +50,7 @@ function App() {
               toggleMenu={menuBar}
               toggleTheme={switchMode}
               themeState={currentTheme}
-              menu={menu}
+              menu={menuOpen}
               home={home}
               about={about}
               events={events}
@@ -60,7 +59,7 @@ function App() {
 
             <MainContent
               toggleMenu={menuBar}
-              menu={menu}
+              menu={menuOpen}
               home={home}
               about={about}
               events={events}
