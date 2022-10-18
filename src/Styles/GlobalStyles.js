@@ -10,6 +10,9 @@ body{
     font-family: var(--font-family);
     color:var(--def-text-color);
     transition: var(--transition);
+    overflow-x: hidden;
+    overflow-y: scroll;
+
 }
 .show{
   color: var(--show);
