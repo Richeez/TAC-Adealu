@@ -40,6 +40,7 @@ window.scrollTo({
   return (
    <ThemeProvider theme={currentTheme === 'light' ? lightTheme : darkTheme}>
     {localStorage.setItem('currentMode', JSON.stringify(currentTheme))}
+    
 
 <>
 <Globalstyles/>
