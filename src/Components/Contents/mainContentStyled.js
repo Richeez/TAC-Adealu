@@ -16,7 +16,7 @@ background: var(--linear-g01);
     display: none;
     width: 3.1rem;
     position: sticky;
-    top: 85%;
+    top: 80%;
     left: 100%;
     z-index: 10;
     overflow: hidden;

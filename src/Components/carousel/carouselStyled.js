@@ -50,7 +50,7 @@ position: relative;
 .controls{
     width: 100%;
     display: flex;
-    background-color: orangered;
+    
 
 .prev, .next {
   cursor: pointer;
@@ -65,7 +65,13 @@ position: relative;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  z-index: 3;
+  z-index: 10;
+
+ & >*{
+
+  pointer-events: none;
+
+  }
 
 }
 
@@ -80,13 +86,19 @@ position: relative;
 
 @media screen and (max-width: 40rem) {
 
+  .prev, .next{
+    font-size: 25px;
+
+  }
+
   .next {
   right: 13%;
-  border-radius: 0 2rem 2rem 0;
+  border-radius: 0 3rem 3rem 0;
+
 }
 .prev {
   left: 13%;
-  border-radius: 2rem 0 0 2rem;
+  border-radius: 3rem 0 0 3rem;
 }
 
 }

@@ -37,10 +37,12 @@ position: relative;
   flex-direction: column;
   min-height: 60vh;
   right: 0;
+  pointer-events: none;
+
   border-radius: 1rem 0 1rem 1rem;
 
 
-  // transform: translateX(100%);
+ transform: translateX(100%);
       opacity: 0;
       transition: var(--transition);
     background: var(--linear-g09);
@@ -55,9 +57,10 @@ position: relative;
 border-radius: 1rem;
 padding-top: 2rem;
 border-top-right-radius: 0;
+
   min-height: 60vh;
   position: absolute;
-  // transform: translateX(100%);
+  transform: translateX(100%);
       // opacity: 0;
       transition: var(--transition);
 
