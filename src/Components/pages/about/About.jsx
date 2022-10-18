@@ -2,6 +2,21 @@ import React from 'react'
 import { Heading} from '../../../Styles/Styled';
 import { ContentCont } from '../subtext/subTextStyled';
 import { AboutPage } from './AboutStyled';
+// import { Animator,
+//    ScrollContainer,
+//     ScrollPage, 
+//     batch, Fade, 
+//     FadeIn, 
+//     FadeOut, 
+//     Move, 
+//     MoveIn, 
+//     MoveOut, 
+//     Sticky, 
+//     StickyIn, 
+//     StickyOut, 
+//     Zoom, 
+//     ZoomIn, 
+//     ZoomOut } from "react-scroll-motion";
 
 const About = ({about}) => {
   return (
@@ -84,6 +99,8 @@ const About = ({about}) => {
         </div>
 </ContentCont>
     </AboutPage>
+
+
   )
 }
 
