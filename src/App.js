@@ -1,8 +1,57 @@
 import Globalstyles from './Styles/GlobalStyles';
 import { Footer, MainContent, NavBar } from './Components';
-import {useState, useRef} from 'react'
+import {useState, useRef, useEffect} from 'react'
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './Theme/theme';
+import Aos from 'aos';
+import  'aos/dist/aos.css'
+
+
+// Fade animations:
+
+// fade
+// fade-up
+// fade-down
+// fade-left
+// fade-right
+// fade-up-right
+// fade-up-left
+// fade-down-right
+// fade-down-left
+// Flip animations:
+
+// flip-up
+// flip-down
+// flip-left
+// flip-right
+// Slide animations:
+
+// slide-up
+// slide-down
+// slide-left
+// slide-right
+// Zoom animations:
+
+// zoom-in
+// zoom-in-up
+// zoom-in-down
+// zoom-in-left
+// zoom-in-right
+// zoom-out
+// zoom-out-up
+// zoom-out-down
+// zoom-out-left
+// zoom-out-right
+// Anchor placement:
+// top-bottom
+// top-center
+// top-top
+// center-bottom
+// center-center
+// center-top
+// bottom-bottom
+// bottom-center
+// bottom-top
 
 
 
@@ -36,6 +85,12 @@ window.scrollTo({
     currentTheme === 'light' ? setCurrentTheme('dark') : setCurrentTheme('light')
     
   }
+
+  useEffect(() => {
+    Aos.init({duration: 2000})
+
+  }, [])
+  
   
   return (
    <ThemeProvider theme={currentTheme === 'light' ? lightTheme : darkTheme}>
