@@ -52,7 +52,7 @@ const About = ({about}) => {
     </div>
 
           <div className="aboutImageAndText span-2">
-           <div  className="text ">
+           <div data-aos='fade-right' className="text ">
             <div className="imageContainer">
               <img src="" alt="insert your profile pic"/>
             </div>
@@ -62,7 +62,7 @@ const About = ({about}) => {
             their world.
               </p>
             </div>
-           <div className="text ">
+           <div data-aos='fade-left' className="text ">
             <div className="imageContainer">
               <img src="" alt="insert your profile pic"/>
             </div>
@@ -72,7 +72,7 @@ const About = ({about}) => {
             their world.
               </p>
             </div>
-           <div className="text">
+           <div data-aos='fade-up-right' className="text">
             <div className="imageContainer">
               <img src="" alt="insert your profile pic"/>
             </div>
@@ -82,7 +82,7 @@ const About = ({about}) => {
             their world.
               </p>
             </div>
-           <div className="text">
+           <div data-aos='fade-up-left' className="text">
             <div className="imageContainer">
               <img src="" alt="insert your profile pic"/>
             </div>

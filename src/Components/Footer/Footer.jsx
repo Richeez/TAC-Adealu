@@ -7,11 +7,11 @@ function Footer() {
     <FooterPage>
       <div className="footer-container ">
         <div className="icons">
-          <span><i className="fab fa-instagram icon "></i></span>
+          <span data-aos='slide-right'><i  className="fab fa-instagram icon "></i></span>
           <span><i className="fab fa-twitter  icon"></i></span>
-          <span><i className="fab fa-youtube icon"></i></span>
-          <span><i className="fab fa-spotify  icon"></i></span>
-          <span><i className="fab fa-facebook  icon"></i></span>
+          <span data-aos='fade-up'><i className="fab fa-youtube icon"></i></span>
+          <span data-aos='fade-up'><i className="fab fa-spotify  icon"></i></span>
+          <span data-aos='slide-left'><i className="fab fa-facebook  icon"></i></span>
         </div>
         <div className="developer">
           <span>

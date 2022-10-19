@@ -11,33 +11,33 @@ const Events = ({events}) => {
       </div>
       <ContentCont as='div'>
         <div className="image-cont">
-          <div className="item">
+          <div data-aos='flip-up' className="item">
             <Image src="images/celebrate-6.jpg" alt="image" />
           <div className="overlay">
 <Heading white>24hrs african praise</Heading>
           </div>
           </div>
-          <div className="item">
+          <div data-aos='zoom-out' className="item">
             <Image src="images/celebrate-1.jpg" alt="image" />
           <div className="overlay">
           <Heading>youth's week</Heading>
 
           </div>
           </div>
-          <div className="item">
+          <div data-aos='zoom-out' className="item">
             <Image src="images/celebrate-2.jpg" alt="image" />
           <div className="overlay">
 <Heading>4hrs of tailoring God's worship</Heading>
           </div>
           </div>
-          <div className="item">
+          <div data-aos='zoom-out' className="item">
             <Image src="images/celebrate-3.jpg" alt="image" />
           <div className="overlay">
           <Heading>concert</Heading>
 
           </div>
           </div>
-          <div className="item">
+          <div data-aos='zoom-out' className="item">
             <Image src="images/celebrate-4.jpg" alt="image" />
           <div className="overlay">
           <Heading>night of guest ministers</Heading>
