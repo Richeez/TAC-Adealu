@@ -1,10 +1,10 @@
 import Globalstyles from './Styles/GlobalStyles';
 import { Footer, MainContent, NavBar } from './Components';
-import {useState, useRef, useEffect} from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './Theme/theme';
 import Aos from 'aos';
-import  'aos/dist/aos.css'
+import 'aos/dist/aos.css'
 
 
 // Fade animations:
@@ -63,69 +63,70 @@ function App() {
   const about = useRef(null);
   const events = useRef(null);
   const contact = useRef(null);
-  
 
-  const [currentTheme, setCurrentTheme] = useState( JSON.parse(localStorage.getItem('currentMode')) ?? 'light');
+
+  const [currentTheme, setCurrentTheme] = useState(JSON.parse(localStorage.getItem('currentMode')) ?? 'light');
 
   const menuBar = () => {
 
     setMenuOpen(prev => !prev)
-    
+
   }
 
   const scrollToPage = (page) => {
-window.scrollTo({
-  top: page.current.offsetTop,
-});    
+    window.scrollTo({
+      top: page.current.offsetTop,
+    });
   };
 
-  
+
 
   function switchMode() {
     currentTheme === 'light' ? setCurrentTheme('dark') : setCurrentTheme('light')
-    
+
   }
 
   useEffect(() => {
-    Aos.init({duration: 2000})
+    Aos.init({ duration: 2000 })
 
   }, [])
-  
-  
+
+
   return (
-   <ThemeProvider theme={currentTheme === 'light' ? lightTheme : darkTheme}>
-    {localStorage.setItem('currentMode', JSON.stringify(currentTheme))}
-    
-
-<>
-<Globalstyles/>
-<div className='header'>
-<div className='inner-header'>
-
-<NavBar
- scrollToPage={scrollToPage} 
- toggleMenu={menuBar} 
- toggleTheme={switchMode}
-themeState={currentTheme}
- menu={menuOpen} home={home} 
- about={about} 
- events={events} 
- contact={contact}/>
+    <ThemeProvider theme={currentTheme === 'light' ? lightTheme : darkTheme}>
+      {localStorage.setItem('currentMode', JSON.stringify(currentTheme))}
 
 
-<MainContent 
-toggleMenu={menuBar} 
-menu={menuOpen}
-home={home} 
-about={about} 
-events={events} 
-contact={contact}/>
-</div>
-</div>
+      <>
+        <Globalstyles />
+        <div className='header'>
+          <div className='inner-header'>
 
-<Footer/> 
-</>
-</ThemeProvider>
+            <NavBar
+              scrollToPage={scrollToPage}
+              toggleMenu={menuBar}
+              toggleTheme={switchMode}
+              themeState={currentTheme}
+              menu={menuOpen} 
+              home={home}
+              about={about}
+              events={events}
+              contact={contact} />
+
+
+            <MainContent
+              toggleMenu={menuBar}
+              menu={menuOpen}
+              home={home}
+              about={about}
+              events={events}
+              contact={contact} />
+          </div>
+        </div>
+
+        <Footer />
+      </>
+    </ThemeProvider>
   );
 }
 

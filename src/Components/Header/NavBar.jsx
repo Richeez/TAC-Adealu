@@ -25,7 +25,7 @@ function NavBar({scrollToPage, menu, toggleTheme, themeState, toggleMenu, home, 
         <SwitcherCont>
         <p className={`${themeState === 'light' ? 'show': 'dim'}`}>Light</p>
         <Label>
-          <Switch onClick={toggleTheme} type='checkbox'/>
+          <Switch onChange={toggleTheme} checked={themeState === 'dark'}  type='checkbox'/>
           <Slider/>
         </Label>
           <p className={`${themeState === 'dark' ? 'show': 'dim'}`}>Dark</p>

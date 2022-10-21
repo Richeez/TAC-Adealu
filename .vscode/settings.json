@@ -1,0 +1,26 @@
+{
+  "editor.fontLigatures": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.formatOnSave": true,
+  "marquee.widgets.npm-stats.packageNames": ["tac"],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#0b3668",
+    "activityBar.background": "#082649",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#bba90a",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#0b3668",
+    "statusBar.background": "#061e3a",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#0b3668",
+    "statusBarItem.remoteBackground": "#061e3a",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#061e3a",
+    "titleBar.activeForeground": "#bba90a",
+    "titleBar.inactiveBackground": "#061e3a99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#061e3a"
+}
