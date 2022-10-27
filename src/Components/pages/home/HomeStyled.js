@@ -66,9 +66,10 @@ background:var(--linear-g06);
     width: 100%;
     font-size: 3rem;
     padding: 0 1rem;
+    text-transform: capitalize;
     letter-spacing: 3.5px;
     text-align: center;
-    font-family: 'Mea Culpa', cursive;
+    font-family: 'Tangerine', cursive;
 
   }
 

@@ -7,8 +7,10 @@ flex-direction: column;
 justify-content: center;
 position: relative;
 min-height: 100vh;
+overflow: hidden;
 background-color: var(--dark-blue-bg);
 background: var(--linear-g01);
+transition: var(--transition);
 
 
 
@@ -67,6 +69,8 @@ background: var(--linear-g01);
     }
 
 }
+
+
 
 
 

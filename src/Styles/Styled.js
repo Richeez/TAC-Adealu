@@ -17,7 +17,7 @@ color: var(--white-color-01);
 justify-content: center;
 align-items: center;
 
- ${(props)=> props.white && css`
+ ${(props) => props.white && css`
 
  color: var(--white-color-01)
  
@@ -47,7 +47,7 @@ gap: 1rem;
   
 }
 
-/* ${(props)=> props.displayRow && css`
+/* ${(props) => props.displayRow && css`
     flex-direction: row;
     background-color: green;
   

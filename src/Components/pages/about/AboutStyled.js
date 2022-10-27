@@ -58,6 +58,7 @@ grid-template-columns: repeat( 2, 1fr);
 padding-top: 3rem;
 grid-column-gap: 2rem;
 grid-row-gap: 4rem;
+width: 100%;
 overflow: hidden;
 
 @media screen and (max-width:40rem){
@@ -72,6 +73,10 @@ overflow: hidden;
     position: relative;
     padding: 3.5rem .5rem 1.5rem;
     border-radius: 1rem;
+    // background-color: aliceblue;
+    max-width: 100%;
+    // width: 250px;
+
 
 
 

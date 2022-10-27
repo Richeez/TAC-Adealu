@@ -7,6 +7,7 @@ position: relative;
 align-items: center;
 font-family: var(--font-family);
 justify-content: center;
+margin-bottom: 2rem;
 
 
 

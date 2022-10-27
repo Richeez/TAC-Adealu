@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
-export const Header = styled.header`
-display: flex;
+export const Header = styled.header.attrs((props) => ({
+  display: props.display || 'flex'
+}))`
+display:${({ display }) => display};
 width: 100%;
 height: 6rem;
 justify-content: center;
@@ -9,8 +11,10 @@ align-items: center;
 padding: 2rem;
 max-width: 100%;
 z-index: 99;
-position: sticky;
+position: fixed;
 top: 0;
+left: 0;
+right: 0;
 backdrop-filter: blur(.2rem);
 background:var(--linear-g02);
 

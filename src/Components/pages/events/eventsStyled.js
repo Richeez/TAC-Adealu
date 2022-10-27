@@ -38,8 +38,9 @@ justify-content: center;
   .image-cont{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    gap: 2rem;
     padding-top: 3rem;
+    overflow: hidden;
 
     h2{
         color: var(--white-color-01);
@@ -52,7 +53,7 @@ justify-content: center;
     
     
     @media screen and (max-width: 40rem){
-        padding-top: 6rem;
+        padding-top: 7rem;
         
     
         

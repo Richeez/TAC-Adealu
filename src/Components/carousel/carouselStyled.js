@@ -15,7 +15,6 @@ position: relative;
 
   .inner-container{
     padding-top: 3rem;
-    /* min-width: 500px; */
     position: relative;
     display: flex;
     overflow: hidden;

@@ -64,6 +64,7 @@ function App() {
   const events = useRef(null);
   const contact = useRef(null);
 
+  const [notRoutable, setNotRoutable] = useState(true);
 
   const [currentTheme, setCurrentTheme] = useState(JSON.parse(localStorage.getItem('currentMode')) ?? 'light');
 
@@ -78,6 +79,11 @@ function App() {
       top: page.current.offsetTop,
     });
   };
+
+  const toggleNotRoutable = () => {
+    setNotRoutable((prev) => !prev);
+  };
+
 
 
 
@@ -97,17 +103,18 @@ function App() {
       {localStorage.setItem('currentMode', JSON.stringify(currentTheme))}
 
 
-      <>
+      <main className='App'>
         <Globalstyles />
         <div className='header'>
           <div className='inner-header'>
 
             <NavBar
+              notRoutable={notRoutable}
               scrollToPage={scrollToPage}
               toggleMenu={menuBar}
               toggleTheme={switchMode}
               themeState={currentTheme}
-              menu={menuOpen} 
+              menu={menuOpen}
               home={home}
               about={about}
               events={events}
@@ -115,6 +122,8 @@ function App() {
 
 
             <MainContent
+              notRoutable={notRoutable}
+              toggleNotRoutable={toggleNotRoutable}
               toggleMenu={menuBar}
               menu={menuOpen}
               home={home}
@@ -125,7 +134,7 @@ function App() {
         </div>
 
         <Footer />
-      </>
+      </main>
     </ThemeProvider>
   );
 }

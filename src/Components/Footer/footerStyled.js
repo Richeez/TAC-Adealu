@@ -55,12 +55,11 @@ export const FooterPage = styled.footer`
 
 
 
-   p {
+   .tradeMark {
     font-size: 15px;
     width: 100%;
-    color:var(--white-color-01);
     text-align: center;
-    padding: 0px;
+    padding: 0 2rem;
   }
 
   .developer{

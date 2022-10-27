@@ -5,10 +5,10 @@
   "marquee.widgets.npm-stats.packageNames": ["tac"],
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#0b3668",
-    "activityBar.background": "#082649",
+    "activityBar.background": "#0b3668",
     "activityBar.foreground": "#e7e7e7",
     "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#bba90a",
+    "activityBarBadge.background": "#ca1569",
     "activityBarBadge.foreground": "#e7e7e7",
     "commandCenter.border": "#e7e7e799",
     "sash.hoverBorder": "#0b3668",
@@ -18,7 +18,7 @@
     "statusBarItem.remoteBackground": "#061e3a",
     "statusBarItem.remoteForeground": "#e7e7e7",
     "titleBar.activeBackground": "#061e3a",
-    "titleBar.activeForeground": "#bba90a",
+    "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveBackground": "#061e3a99",
     "titleBar.inactiveForeground": "#e7e7e799"
   },
