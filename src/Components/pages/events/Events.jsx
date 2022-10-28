@@ -26,7 +26,7 @@ const Events = ({ events }) => {
           <div data-aos="fade-out" className="item">
             <Image src="images/celebrate-2.jpg" loading="lazy" alt="image" />
             <div className="overlay">
-              <Heading>4hrs of tailoring God's worship</Heading>
+              <Heading>4hr tailored worship</Heading>
             </div>
           </div>
 

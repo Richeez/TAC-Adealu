@@ -7,10 +7,108 @@ flex-direction: column;
 justify-content: center;
 position: relative;
 min-height: 100vh;
-overflow: hidden;
 background-color: var(--dark-blue-bg);
 background: var(--linear-g01);
 transition: var(--transition);
+
+.pop-up-container{
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: var(--transparent-color-02);
+  pointer-events: none;
+  opacity: 0;
+
+  @media screen and (max-width:40rem){
+    padding: 2rem 1rem;
+
+  }
+
+  .pop-up{
+    width: 80%;
+    height: 30rem;
+    background-color: var(--cornsilk-color);
+    padding: 1rem;
+    border-radius: 2rem;
+    color: var(--def-text-color);
+    transition: var(--transition);
+    transform: scale(0);
+    position: relative;
+
+    h2{
+      text-align: center;
+      text-transform: uppercase;
+
+    }
+    .close__container{
+      position: absolute;
+      top: 10px;
+      right: 3%;
+        width: 50px;
+        height: 50px;
+
+
+      .close__pop-up{
+        position: relaive;
+        width: 100% ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        cursor: pointer;
+
+        &::before {
+        content: "";
+        width: 2rem;
+        height: 0.2rem;
+        position: absolute;
+        transform: rotate(45deg) translate(2px);
+        background-color: var(--def-text-color);
+      }
+      &::after {
+        content: "";
+        width: 2rem;
+        height: 0.2rem;
+        position: absolute;
+        transform: rotate(125deg);
+        background-color: var(--def-text-color);
+      }
+      }
+      @media screen and (max-width:40rem){
+        top: 10px;
+      right: 5%;
+
+      }
+
+    }
+    @media screen and (max-width:40rem){
+      width: 100% ;
+    }
+
+  }
+}
+
+.view{
+  pointer-events: all;
+  opacity: 1;
+  transition: var(--transition);
+
+
+  .pop{
+    transform: scale(1);
+    transition: var(--transition);
+
+  
+  }
+
+}
 
 
 
@@ -18,9 +116,9 @@ transition: var(--transition);
     display: none;
     width: 3.1rem;
     position: sticky;
-    top: 80%;
+    top: 75%;
     left: 100%;
-    z-index: 10;
+    z-index: 5;
     overflow: hidden;
     transform: translateX(-50%);
     background-color: var(--dark-blue-bg);
@@ -42,7 +140,6 @@ transition: var(--transition);
       display: flex;
       width: 4rem;
       height: 4rem;
-      z-index: 10;
 
 
     }
@@ -51,14 +148,13 @@ transition: var(--transition);
       display: flex;
       width: 3.5rem;
       height: 3.5rem;
-      z-index: 10;
 
 
 
     }
 
     .menu{
-      fill: white;
+      fill: var(--white-color-01);
       width: 100%;
       height: 3rem;
       pointer-events: none;

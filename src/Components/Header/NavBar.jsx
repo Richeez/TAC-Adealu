@@ -16,7 +16,7 @@ function NavBar({
 }) {
   return (
     <Header display={notRoutable ? "" : "none"}>
-      <Brand>
+      <Brand href='#'>
         <Logo src="./images/logo-2.png" alt="brand logo" />
       </Brand>
       <div className={`nav-container ${menu ? "active" : ""}`}>

@@ -58,8 +58,10 @@ export const FooterPage = styled.footer`
    .tradeMark {
     font-size: 15px;
     width: 100%;
+    color: var(--tradeMark-color);
     text-align: center;
     padding: 0 2rem;
+    font-weight: bold;
   }
 
   .developer{
@@ -74,6 +76,7 @@ color: var(--dark-orange);
 span{
   small{
     transition: var(--transition);
+    font-weight: bold;
 
   }
   &:hover{

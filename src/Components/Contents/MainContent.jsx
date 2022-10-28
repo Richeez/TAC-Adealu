@@ -13,29 +13,36 @@ const MainContent = ({
   contact,
   notRoutable,
   toggleNotRoutable,
+  view,
+  pop,
+  popUp,
 }) => {
   return (
     <>
       <MainContainer>
-        <div className="pop-up-container">
-          <div className="pop-up">
-            {/* <h2>pop up</h2>
-            <p>Hello World</p> */}
+        <div ref={view} className="pop-up-container">
+          <div ref={pop} className="pop-up">
+            <div className="close__container">
+              <div onClick={popUp} className="close__pop-up"></div>
+            </div>
+            <h2>Title</h2>
+            <p>Content</p>
           </div>
-        </div>
-        <div onClick={toggleMenu} className="MenuBar">
-          {menu ? (
-            <Close className="menu active" />
-          ) : (
-            <MenuBar className="menu active" />
-          )}
         </div>
         {notRoutable ? (
           <>
+            <div onClick={toggleMenu} className="MenuBar">
+              {menu ? (
+                <Close className="menu active" />
+              ) : (
+                <MenuBar className="menu active" />
+              )}
+            </div>
             <Home
               notRoutable={notRoutable}
               toggleNotRoutable={toggleNotRoutable}
               home={home}
+              popUp={popUp}
             />
             <Subtext />
             <About about={about} />

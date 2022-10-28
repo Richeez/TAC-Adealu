@@ -15,6 +15,7 @@ margin-bottom: 2rem;
 
  @media screen and (max-width:40rem){
   width: 100% ;
+  top: -1rem;
 
 
     

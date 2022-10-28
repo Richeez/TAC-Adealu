@@ -4,13 +4,21 @@ import CarouselControls from "./CarouselControls";
 import CarouselIndicator from "./CarouselIndicator";
 
 const ImageSlides = ({
-  slides,
   indicators = false,
   controls = false,
   interval = 5000,
   autoSlide = true,
   width = 1000,
 }) => {
+  const slides = [
+    { img: "images/image__2.png" },
+    { img: "images/service.jpeg" },
+    { img: "images/celebration1.jpg" },
+    { img: "images/celebrate-1.jpg" },
+    { img: "images/celebrate-5.jpg" },
+    { img: "images/image__3.png" },
+  ];
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slideInterval = useRef(null);

@@ -92,6 +92,8 @@ width: 70%;
 margin-left: auto;
 height: max-content;
 list-style: none;
+color: var(--white-color-01);
+
 
 @media screen and (max-width:57rem){
   display: flex;
@@ -193,7 +195,7 @@ object-fit: contain;
 
 `;
 
-export const Brand = styled.div`
+export const Brand = styled.a`
 width: 100px;
 height: 90px;
 position: relative;

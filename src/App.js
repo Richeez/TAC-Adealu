@@ -63,11 +63,17 @@ function App() {
   const about = useRef(null);
   const events = useRef(null);
   const contact = useRef(null);
+  const view = useRef(null);
+  const pop = useRef(null);
 
   const [notRoutable, setNotRoutable] = useState(true);
 
   const [currentTheme, setCurrentTheme] = useState(JSON.parse(localStorage.getItem('currentMode')) ?? 'light');
 
+  const popUp = () => {
+    view.current.classList.toggle('view')
+    pop.current.classList.toggle('pop')
+  }
   const menuBar = () => {
 
     setMenuOpen(prev => !prev)
@@ -127,6 +133,9 @@ function App() {
               toggleMenu={menuBar}
               menu={menuOpen}
               home={home}
+              popUp={popUp}
+              view={view}
+              pop={pop}
               about={about}
               events={events}
               contact={contact} />

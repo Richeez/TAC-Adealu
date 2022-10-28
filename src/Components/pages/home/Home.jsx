@@ -4,7 +4,7 @@ import Carousel from "../../carousel/Carousel";
 import { HomePage } from "./HomeStyled";
 import Typewriter from "typewriter-effect";
 
-function Home({ home, toggleNotRoutable }) {
+function Home({ home, toggleNotRoutable, popUp }) {
   return (
     <HomePage>
       <div className="circle1" ref={home}>
@@ -25,7 +25,7 @@ function Home({ home, toggleNotRoutable }) {
         <Carousel />
         <FlexContainer className="absolute">
           <ButtonLink>
-            <Text>Offering</Text>
+            <Text onClick={popUp}>Offering</Text>
           </ButtonLink>
           <ButtonLink to="./" onClick={toggleNotRoutable}>
             <Text>Explore</Text>

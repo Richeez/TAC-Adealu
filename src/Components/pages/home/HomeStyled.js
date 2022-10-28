@@ -69,6 +69,7 @@ background:var(--linear-g06);
     text-transform: capitalize;
     letter-spacing: 3.5px;
     text-align: center;
+    color: var(--white-color-01);
     font-family: 'Tangerine', cursive;
 
   }

@@ -34,21 +34,23 @@ const About = ({ about }) => {
               world.
             </p>
           </div>
-          <div className="left-item">
-            <div className="item">
-              <h2>leadership team:</h2>
+          <div className="about-contents">
+            <div className="left-item">
+              <div className="item">
+                <h2>leadership team:</h2>
 
-              <p>
-                Our leadership team recognizes the authority of God, and
-                realizes that we are shepherds who serve under the Chief
-                Shepherd, Jesus Christ. We desire to devote ourselves to prayer
-                and to the ministry of the Word. Our passion and goal is to
-                equip the believers for the work of the ministry until we all
-                attain maturity in the fullness of Christ.
-              </p>
+                <p>
+                  Our leadership team recognizes the authority of God, and
+                  realizes that we are shepherds who serve under the Chief
+                  Shepherd, Jesus Christ. We desire to devote ourselves to
+                  prayer and to the ministry of the Word. Our passion and goal
+                  is to equip the believers for the work of the ministry until
+                  we all attain maturity in the fullness of Christ.
+                </p>
+              </div>
             </div>
 
-            <div className="aboutImageAndText span-2">
+            <div className="right-item span-2">
               <div data-aos="fade-right" className="text ">
                 <div className="imageContainer">
                   <img src="" alt="insert your profile pic" />

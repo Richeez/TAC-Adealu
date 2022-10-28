@@ -1,7 +1,8 @@
 export const darkTheme = {
 
     font: {
-        defTextColor: '#ffff',
+        defTextColor: 'black',
+        fallbackTextColor: '#ffff',
         defFontSize: '1.2rem',
         fontFamily: '"Poppins", sans-serif',
         orangeColor: 'rgb(255, 60, 0)',
@@ -28,6 +29,7 @@ export const darkTheme = {
         transparentColor01: ' #00000033',
         transparentColor02: '#000000b3',
         whiteColor01: '#ffffff',
+        tradeMarkColor: '#ffffff',
         whiteColor02: '#ffffff02',
         whiteColor1: 'rgba(255, 255, 255, 0.7)',
         whiteColor2: 'rgba(255, 255, 255, 0.3)',
@@ -71,7 +73,8 @@ export const darkTheme = {
 export const lightTheme = {
 
     font: {
-        defTextColor: '#ffff',
+        defTextColor: 'black',
+        fallbackTextColor: 'black',
         defFontSize: '1.2rem',
         fontFamily: '"Poppins", sans-serif',
         orangeColor: 'rgba(4, 12, 24)',
@@ -98,6 +101,7 @@ export const lightTheme = {
         transparentColor01: 'linear-gradient( #061c4d 5%,  var(--cornsilk-color) 10%, var(--white-color-01) 30%)',
         transparentColor02: '#000000b3',
         whiteColor01: '#ffffff',
+        tradeMarkColor: '#0d346e',
         whiteColor02: '#ffffff02',
         whiteColor1: 'rgba(255, 255, 255, 0.7)',
         whiteColor2: 'rgba(255, 255, 255, 0.3)',

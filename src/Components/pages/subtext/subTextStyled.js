@@ -9,7 +9,7 @@ box-shadow: var(--box-shadow01);
 padding: 3rem;
     
     @media screen and (max-width:40rem){
-        width: 95%;
+        width: 100%;
         padding: 1rem ;
 
     

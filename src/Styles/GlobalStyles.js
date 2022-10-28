@@ -1,19 +1,19 @@
 import { createGlobalStyle } from "styled-components";
 
 const Globalstyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,500&family=Tangerine:wght@400;700&display=swap');
-
 body{
 
   background-color: var(--dark-blue-bg);
   background: var(--linear-g01);
   font-size: var(--def-font-size);
     font-family: var(--font-family);
-    color:var(--def-text-color);
+    color:var(--fallback-text-color);
     transition: var(--transition);
 }
 .App{
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  /* position: relative; */
+
     /* overflow-y: scroll; */
 
 }
@@ -46,6 +46,7 @@ body{
   --light-blue-bg:${({ theme }) => theme.colors.lightBlueBG};
   --ash-color:${({ theme }) => theme.colors.ashColor};
   --def-text-color:${({ theme }) => theme.font.defTextColor};
+  --fallback-text-color:${({ theme }) => theme.font.fallbackTextColor};
   --def-font-size:${({ theme }) => theme.font.defFontSize};
   --font-family: ${({ theme }) => theme.font.fontFamily};
   --linear-g01:${({ theme }) => theme.colors.LG01};
@@ -66,6 +67,7 @@ body{
   --transparent-color-01:${({ theme }) => theme.colors.transparentColor01};
   --transparent-color-02:${({ theme }) => theme.colors.transparentColor02};
   --white-color-01:${({ theme }) => theme.colors.whiteColor01};
+  --tradeMark-color:${({ theme }) => theme.colors.tradeMarkColor};
   --white-color-02:${({ theme }) => theme.colors.whiteColor02};
   --white-color-1:${({ theme }) => theme.colors.whiteColor1};
   --white-color-2:${({ theme }) => theme.colors.whiteColor2};
@@ -87,7 +89,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    line-height: 1.3;
+    line-height: 1.6;
     scroll-padding-top: 10rem;
 
 
@@ -96,7 +98,8 @@ body{
 
 p{
   width: 100%;
-  text-shadow: 1px 2px 2px var(--grey-5);
+  color: var(--fallback-text-color);
+  /* text-shadow: 1px 2px 2px var(--grey-5); */
 
 }
 
