@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledContainer = styled.section.attrs((props) => ({
     width: props.width || "100%",
     hasPadding: props.hasPadding || false,
-    bgColor: props.bgColor || 'yellow'
+    bgColor: props.bgColor || 'transparent'
 
 }))`
 --bg-color: #061e3a;

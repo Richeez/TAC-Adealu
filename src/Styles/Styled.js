@@ -36,13 +36,14 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 1rem;
+gap: 2rem;
 
-
+            
 
 @media screen and (max-width:40rem){
     flex-direction: column;
-    gap: 2rem !important;
+    gap: 1rem !important;
+
     margin-bottom:-7rem;
   
 }

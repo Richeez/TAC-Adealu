@@ -61,6 +61,7 @@ margin-bottom: 2rem;
       border-radius: 1rem;
       background:var(--linear-g04);
 
+
       @media screen and (max-width:40rem){
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         width: 100%;
@@ -91,6 +92,10 @@ margin-bottom: 2rem;
     width: 100%;
     padding: 0 1.3rem;
     gap: 1.3rem;
+
+    & > *{
+      margin: .5rem 0;
+    }
 
 
     @media screen and (max-width:40rem){
@@ -156,6 +161,12 @@ margin-bottom: 2rem;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 3rem;
+    & > *{
+      margin: 0 0 .5rem;
+      width: 100%;
+
+    }
+
     padding: 0 1.3rem;
       font-family: var(--font-family);
 
@@ -174,10 +185,6 @@ margin-bottom: 2rem;
       
 
 
-  }
-
-  .email-Comment > * {
-    width: 100%;
   }
 
   @media screen and (max-width:40rem){

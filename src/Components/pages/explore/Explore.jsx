@@ -1,10 +1,16 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { StyledContainer } from "./exploreStyled";
 
 const Explore = ({ toggleNotRoutable }) => {
   return (
     <StyledContainer>
-      <div onClick={toggleNotRoutable}>Explore</div>
+      <FontAwesomeIcon
+        onClick={toggleNotRoutable}
+        className="navigate_to_left"
+        icon={["fa", "arrow-left-long"]}
+      />
+      <div>Explore</div>
     </StyledContainer>
   );
 };

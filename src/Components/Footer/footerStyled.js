@@ -13,7 +13,7 @@ export const FooterPage = styled.footer`
 
     .icons {
       display: flex;
-      padding: 0 10px;
+      padding: 0 3rem;
       margin: 25px 0;
       width: 100%;
       gap: 1rem;
@@ -22,7 +22,7 @@ export const FooterPage = styled.footer`
       flex-wrap: wrap;
 
       .icon {
-       /* margin: 0 8px; */
+       margin: 0 2px;
        cursor: pointer;
        border: 1px inset var(--dark-orange);
        border-radius: 4px;

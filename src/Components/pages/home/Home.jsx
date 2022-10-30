@@ -17,6 +17,7 @@ function Home({ home, toggleNotRoutable, popUp }) {
                   "Let nothing hinder your service to God",
                 ],
                 autoStart: true,
+                pauseFor: 5000,
                 loop: true,
               }}
             />

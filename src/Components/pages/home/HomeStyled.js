@@ -41,9 +41,14 @@ position: relative;
    transform: translateY(-30%); 
 
    .absolute{
-  margin-top: 15%;
-  gap: 5rem;
+  margin-top: 12%;
   z-index: 3;
+  gap: 5rem;
+
+  & > *{
+    margin: .5rem 0;
+  }
+
   
 }
 .overlay{
@@ -62,7 +67,7 @@ background:var(--linear-g06);
 
   pointer-events: none;
   h1{
-    margin-top: -8rem;
+    margin-top: -9rem;
     width: 100%;
     font-size: 3rem;
     padding: 0 1rem;
@@ -70,6 +75,7 @@ background:var(--linear-g06);
     letter-spacing: 3.5px;
     text-align: center;
     color: var(--white-color-01);
+      text-shadow: 2px 2px 5px var(--def-text-color);
     font-family: 'Tangerine', cursive;
 
   }

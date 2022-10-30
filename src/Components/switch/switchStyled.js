@@ -3,12 +3,13 @@ import styled from "styled-components";
 
 export const SwitcherCont = styled.div`
 display: flex;
+width: max-content;
 align-items: center;
-justify-content: space-between;
-gap: 1rem;
+justify-content: center;
 p{
     font-size: .8rem;
     width: max-content;
+    margin: 0 1rem;
 }
 `;
 

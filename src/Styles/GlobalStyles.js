@@ -103,6 +103,18 @@ p{
 
 }
 
+.navigate_to_left{
+  font-size: 2rem;
+  color: var(--white-color-01);
+  position: absolute;
+  top: -8%;
+  left: 5%;
+  border: 2px solid var(--white-color-01);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .clip{
   position: absolute;
   top: 0;
@@ -155,6 +167,11 @@ section{
 
 .absolute{
     position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2rem;
+
 }
 
 ::-webkit-scrollbar-thumb {

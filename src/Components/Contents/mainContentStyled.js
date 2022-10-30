@@ -34,6 +34,7 @@ transition: var(--transition);
   .pop-up{
     width: 80%;
     height: 30rem;
+    border: 5px solid var(--dark-orange);
     background-color: var(--cornsilk-color);
     padding: 1rem;
     border-radius: 2rem;
@@ -45,6 +46,11 @@ transition: var(--transition);
     h2{
       text-align: center;
       text-transform: uppercase;
+
+    }
+
+    p{
+      color: var(--def-text-color);
 
     }
     .close__container{
